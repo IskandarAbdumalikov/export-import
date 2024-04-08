@@ -44,7 +44,7 @@ let products = [
 
 let productCards = document.querySelector(".products__cards");
 let categorySelect = document.querySelector("#products__category-select");
-import { CATEGORY } from "./methods";
+import { CATEGORY } from "./methods.js";
 
 function mapCards() {
   let productsTag = "";
