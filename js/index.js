@@ -47,7 +47,7 @@ let products = [
     cost: "2 200 000 so'm",
     count: 4,
     color: "white",
-    category: "tv"
+    category: "tv",
   },
   {
     id: 5,
@@ -56,7 +56,21 @@ let products = [
     cost: "5 200 000 so'm",
     count: 8,
     color: "black",
-    category: "tv"
+    category: "tv",
+  },
+  {
+    id: 6,
+    name: "Samsung",
+    img: "https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-15-Pro/Blue-Titanium/Apple-iPhone-15-Pro-Blue-Titanium-thumbnail.png",
+    cost: "16 200 000 so'm",
+    count: 7,
+    color: "white",
+    category: "phone",
+    info: [
+      { key: "Processor", value: "Nomalum" },
+      { key: "SSD", value: "256GB" },
+      { key: "Android", value: "11" },
+    ],
   },
 ];
 

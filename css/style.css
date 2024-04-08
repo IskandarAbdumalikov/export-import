@@ -115,7 +115,7 @@ button {
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -316,7 +316,7 @@ body {
   }
 }
 #hero {
-  margin-top: 120px;
+  padding: 120px 0px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -351,6 +351,7 @@ select {
 }
 
 .products__card__info {
+  height: 50%;
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
@@ -371,7 +372,7 @@ select {
   color: white;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1150px) {
   .products__cards {
     display: grid;
     grid-template-columns: 1fr;
