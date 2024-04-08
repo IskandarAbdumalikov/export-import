@@ -64,9 +64,9 @@ let productCards = document.querySelector(".products__cards");
 let categorySelect = document.querySelector("#products__category-select");
 import { CATEGORY } from "./methods.js";
 
-function mapCards() {
+function mapCards(productsArr) {
   let productsTag = "";
-  products.map((el) => {
+  productsArr.map((el) => {
     productsTag += `
             <div class="products__card">
             <div class="products__card__img">
@@ -103,6 +103,7 @@ function filterCategory(changeCategory) {
     );
 
     mapCards(resProducts);
+    console.log(resProducts);
   }
   localStorage.setItem(CATEGORY, changeCategory);
 }
