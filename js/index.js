@@ -12,20 +12,20 @@ let products = [
       { key: "RAM", value: "8GB" },
     ],
   },
-  // {
-  //   id: 2,
-  //   name: "HP",
-  //   img: "https://i5.walmartimages.com/seo/HP-Stream-14-Laptop-Intel-Celeron-N4000-4GB-SDRAM-32GB-eMMC-Office-365-1-yr-Royal-Blue_4f941fe6-0cf3-42af-a06c-7532138492fc_2.cb8e85270e731cb1ef85d431e49f0bf2.jpeg",
-  //   cost: "6 200 000 so'm",
-  //   count: 3,
-  //   category: "laptop",
-  //   color: "black",
-  //   info: [
-  //     { key: "Processor", value: "Ryzen 5500" },
-  //     { key: "SSD", value: "256GB" },
-  //     { key: "RAM", value: "16GB" },
-  //   ],
-  // },
+  {
+    id: 2,
+    name: "HP",
+    img: "https://i5.walmartimages.com/seo/HP-Stream-14-Laptop-Intel-Celeron-N4000-4GB-SDRAM-32GB-eMMC-Office-365-1-yr-Royal-Blue_4f941fe6-0cf3-42af-a06c-7532138492fc_2.cb8e85270e731cb1ef85d431e49f0bf2.jpeg",
+    cost: "6 200 000 so'm",
+    count: 3,
+    category: "laptop",
+    color: "black",
+    info: [
+      { key: "Processor", value: "Ryzen 5500" },
+      { key: "SSD", value: "256GB" },
+      { key: "RAM", value: "16GB" },
+    ],
+  },
   {
     id: 3,
     name: "Samsung",
@@ -57,7 +57,7 @@ function mapCards() {
             <div class="products__card__info">
               <h3 class="products__card__title">${el.name}</h3>
               <p class="products__card__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
               </p>
               <button class="products__card__btn">Add to basket</button>
             </div>

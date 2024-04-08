@@ -326,11 +326,33 @@ body {
 }
 
 .products__card {
-  width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  box-shadow: 1px 1px 10px gray;
 }
+
 .products__card__img {
   width: 100%;
+  height: 50%;
+}
+
+.products__card__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.products__card__info {
+  height: 50%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.products__card__btn {
+  padding: 15px 30px;
+  border: 1px solid black;
+  background: transparent;
+  color: black;
+  border-radius: 10px;
 }
