@@ -316,7 +316,10 @@ body {
   }
 }
 #hero {
-  padding-top: 120px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .products__cards {
@@ -325,10 +328,16 @@ body {
   gap: 50px;
 }
 
+select {
+  padding: 10px 15px;
+}
+
 .products__card {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 10px gray;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .products__card__img {
@@ -342,11 +351,10 @@ body {
 }
 
 .products__card__info {
-  height: 50%;
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .products__card__btn {
@@ -355,4 +363,18 @@ body {
   background: transparent;
   color: black;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.products__card__btn:hover {
+  background: black;
+  color: white;
+}
+
+@media (max-width: 990px) {
+  .products__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }

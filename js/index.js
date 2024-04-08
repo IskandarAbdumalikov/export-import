@@ -5,7 +5,7 @@ let products = [
     img: "https://acom.pk/cdn/shop/articles/laptop_or_macbook.jpg?v=1670917158",
     cost: "1 200 $",
     count: 1,
-    category: "Laptop",
+    category: "laptop",
     color: "blue",
     info: [
       { key: "SSD", value: "512GB" },
@@ -40,6 +40,24 @@ let products = [
       { key: "Android", value: "11" },
     ],
   },
+  {
+    id: 4,
+    name: "TV 23",
+    img: "https://thumbs.dreamstime.com/b/vintage-television-13933447.jpg",
+    cost: "2 200 000 so'm",
+    count: 4,
+    color: "white",
+    category: "tv"
+  },
+  {
+    id: 5,
+    name: "TV 32",
+    img: "https://images.samsung.com/is/image/samsung/p6pim/in/ua32t4380akxxl/gallery/in-hd-t4310-428849-ua32t4380akxxl-537157418?$650_519_PNG$",
+    cost: "5 200 000 so'm",
+    count: 8,
+    color: "black",
+    category: "tv"
+  },
 ];
 
 let productCards = document.querySelector(".products__cards");
@@ -56,6 +74,9 @@ function mapCards() {
             </div>
             <div class="products__card__info">
               <h3 class="products__card__title">${el.name}</h3>
+              <h2>${el.cost}</h2>
+              <h3>Color : ${el.color}</h3>
+              <h3>Count : ${el.count}</h3>
               <p class="products__card__desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
               </p>
@@ -67,6 +88,11 @@ function mapCards() {
  productCards.innerHTML = productsTag
 
 }
+
+categorySelect.addEventListener("change", (e) => {
+  let changeCategory = e.target.value;
+  filterCategory(changeCategory);
+});
 
 function filterCategory(changeCategory) {
   if (changeCategory === "all") {
@@ -81,10 +107,7 @@ function filterCategory(changeCategory) {
   localStorage.setItem(CATEGORY, changeCategory);
 }
 
-categorySelect.addEventListener("change", (e) => {
-  let changeCategory = e.target.value;
-  filterCategory(changeCategory);
-});
+
 
 let changeCategory = localStorage.getItem(CATEGORY) || "all";
 categorySelect.value = changeCategory;
